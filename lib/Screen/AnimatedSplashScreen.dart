@@ -45,17 +45,29 @@ class SplashScreenState extends State<AnimatedSplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new Image.asset(
-              'assets/images/logo.png',
-              width: animation.value * 250,
-              height: animation.value * 250,
-            ),
-          ],
-        ),
+      body: Stack(
+        fit: StackFit.expand,
+        children: <Widget>[
+          new Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+
+              Padding(padding: EdgeInsets.only(bottom: 30.0),child:new Image.asset('assets/images/powered_by.png',height: 25.0,fit: BoxFit.scaleDown,))
+
+
+          ],),
+          new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Image.asset(
+                'assets/images/logo.png',
+                width: animation.value * 250,
+                height: animation.value * 250,
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

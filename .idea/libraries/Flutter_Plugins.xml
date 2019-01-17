@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../../flutter_windows_v0.4.4-beta/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.4.2" />
-      <root url="file://$PROJECT_DIR$/../../../../flutter_windows_v0.4.4-beta/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-0.8.0" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-0.8.0" />
+      <root url="file://$USER_HOME$/AppData/Local/Android/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.4.3" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

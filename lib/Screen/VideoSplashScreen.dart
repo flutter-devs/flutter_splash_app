@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:AeologicSplashDemo/Constant/Constant.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:AeologicSplashDemo/Screen/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -37,7 +37,8 @@ class VideoState extends State<VideoSplashScreen> {
     playerController.setVolume(0.0);
     playerController.removeListener(listener);
     Navigator.of(context).pop(VIDEO_SPALSH);
-    Navigator.of(context).pushReplacementNamed(HOME_SCREEN);
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => HomeScreen()));
   }
 
   void initializeVideo() {

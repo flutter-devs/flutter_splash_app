@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:AeologicSplashDemo/Constant/Constant.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'HomePage.dart';
 
 class ImageSplashScreen extends StatefulWidget {
   @override
@@ -16,7 +17,8 @@ class SplashScreenState extends State<ImageSplashScreen> {
   }
 
   void navigationPage() {
-    Navigator.of(context).pushReplacementNamed(HOME_SCREEN);
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => HomeScreen()));
   }
 
   @override
